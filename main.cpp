@@ -63,7 +63,7 @@ class CPU {
 		std::fstream file(file_name);
 
 		if (!file.is_open()) {
-			std::cout << "No file found";
+			std::cout << "No file found\n";
 			return;
 		}
 
@@ -271,9 +271,17 @@ class CPU {
 	}
 
 int main() {
-	CPU cpu("main.asl",8);
+	std::string fileName;
+	std::cout << "Enter file name: \n";
+	std::cin >> fileName;
+	CPU cpu(fileName,8);
 
 	cpu.run();
+	std::cout << "End of program. Type \"exit\" to exit.\n";
+	std::string exitInput;
+	while (exitInput != "exit"){
+		std::cin >> exitInput;
+	}
 
 	return 0;
 }
