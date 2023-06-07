@@ -3,4 +3,4 @@ A VERY bad interactive interpreter I made for AQA's assembly language to help un
 
 I have only uploaded this to allow my classmates to use it. The code is awfull, I made it in around 2 hours, please do not use this unless there are no other options.
 
-(a better version)[https://github.com/A3therium/python_assembler]
+[a better version](https://github.com/A3therium/python_assembler)
